@@ -1,0 +1,22 @@
+<%- include('partials/header') -%>
+
+<h1>hi! theehe</h1>
+<p> <%= StartingContent %> </p>
+<!-- <% console.log(posts) %> -->
+<!-- <% for ( let i = 0; i<posts.length; i++) { %>
+   
+    <h1> <%= posts[i].title %> </h1>
+    <p> <%= posts[i].content %> </p>
+<%};%> -->
+<% posts.forEach(function(postx){ %>
+    <h1> <%= postx.title %> </h1>
+     <p> <%= postx.content.substring(0,100) + " ..." %> 
+    <a href="/posts/<%=postx._id%>">Read more</a>
+  </p> 
+ <%})%>
+
+<%- include('partials/footer') -%>
+
+
+
+
