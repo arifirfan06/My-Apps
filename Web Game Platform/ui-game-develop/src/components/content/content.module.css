@@ -1,0 +1,26 @@
+.content {
+  margin: 0px;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(37, 145, 251, 0.98) 0.1%,
+    rgba(0, 7, 128, 1) 99.8%
+  );
+  background-attachment: fixed;
+}
+
+.buttons {
+  /* justify-content: center;
+  flex-direction: column; */
+  margin-top: 70px;
+  color: rgb(216, 6, 6);
+  margin-left: 50px;
+  flex-direction: column;
+  display: inline-flex;
+}
+
+.content-img {
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+  height: 50%;
+}
